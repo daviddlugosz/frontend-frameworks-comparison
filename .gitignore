@@ -4,3 +4,4 @@
 
 /.vs
 /FrameworkComparisonAPI/obj
+/FrameworkComparisonAPI/bin/Debug/netcoreapp2.2
