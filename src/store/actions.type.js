@@ -1,0 +1,11 @@
+// pages.module
+export const GET_PAGES = 'getPages'
+export const GET_PAGE = 'getPage'
+export const SET_PAGE_NAME = 'setPageName'
+export const SET_PAGE_PATH = 'setPagePath'
+export const SET_PAGE_CONTENT = 'setPageContent'
+export const DELETE_PAGE = 'deletePage'
+export const SAVE_PAGE = 'savePage'
+export const CHANGE_EDIT_MODE = 'changeEditMode'
+export const FLUSH_PAGE = 'flushPage'
+export const SET_PAGE_LOADED = 'setPageLoaded'
