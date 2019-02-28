@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkComparisonAPI</name>
+    </assembly>
+    <members>
+        <member name="T:FrameworkComparisonAPI.Controllers.PagesController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkComparisonAPI.Controllers.PagesController.PagesService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Controllers.PagesController.#ctor(FrameworkComparisonAPI.Services.PagesService)">
+            <summary>
+            
+            </summary>
+            <param name="pagesService"></param>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Controllers.PagesController.ListAllPages">
+            <summary>
+            Gets name of every Page
+            </summary>
+            <returns>List of Path and Name of all Pages</returns>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Controllers.PagesController.Get(System.String)">
+            <summary>
+            Gets Page by Path
+            </summary>
+            <param name="path">Path of the Page</param>
+            <returns>Page</returns>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Controllers.PagesController.Post(FrameworkComparisonAPI.ViewModel.PageViewModel)">
+            <summary>
+            Creates Page
+            </summary>
+            <param name="data">Page data</param>
+            <returns>Created Page</returns>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Controllers.PagesController.Put(System.String,FrameworkComparisonAPI.ViewModel.PageViewModel)">
+            <summary>
+            Updates Page
+            </summary>
+            <param name="path">Path of the Page</param>
+            <param name="page">Page data</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Controllers.PagesController.Delete(System.String)">
+            <summary>
+            Deletes Page by Path
+            </summary>
+            <param name="path">Path of the Page</param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkComparisonAPI.Helpers.DataContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Helpers.DataContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{FrameworkComparisonAPI.Helpers.DataContext})">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:FrameworkComparisonAPI.Helpers.DataContext.Pages">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Helpers.DataContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:FrameworkComparisonAPI.Middleware.ErrorHandlingMiddleware">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Middleware.ErrorHandlingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Middleware.ErrorHandlingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkComparisonAPI.Models.Page">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkComparisonAPI.Models.Page.Path">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkComparisonAPI.Models.Page.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkComparisonAPI.Models.Page.HtmlContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FrameworkComparisonAPI.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkComparisonAPI.Services.PagesService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:FrameworkComparisonAPI.Services.PagesService._context">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Services.PagesService.#ctor(FrameworkComparisonAPI.Helpers.DataContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Services.PagesService.GetAllPagesNames">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Services.PagesService.GetPage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Services.PagesService.AddPageAsync(FrameworkComparisonAPI.ViewModel.PageViewModel)">
+            <summary>
+            
+            </summary>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Services.PagesService.GetPathToPage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Services.PagesService.UpdatePageAsync(FrameworkComparisonAPI.ViewModel.PageViewModel,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="page"></param>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Services.PagesService.RemovePageAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Services.PagesService.GeneratePathForPage(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Services.PagesService.RemoveDiacritism(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="T:FrameworkComparisonAPI.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:FrameworkComparisonAPI.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:FrameworkComparisonAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:FrameworkComparisonAPI.ViewModel.PageLinkViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkComparisonAPI.ViewModel.PageLinkViewModel.Path">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkComparisonAPI.ViewModel.PageLinkViewModel.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:FrameworkComparisonAPI.ViewModel.PageViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkComparisonAPI.ViewModel.PageViewModel.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FrameworkComparisonAPI.ViewModel.PageViewModel.Content">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
