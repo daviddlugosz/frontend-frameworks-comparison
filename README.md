@@ -1,6 +1,6 @@
 # frontend-frameworks-comparison
 
-All code are separated into branches in this repo
+All code is separated into branches in this repo
 
 API:  
 ASP.NET Core 2.2 API for this simple SPA
